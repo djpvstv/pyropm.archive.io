@@ -38,7 +38,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 200%;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #101010;
@@ -57,7 +57,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 200%;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #BB0000;
@@ -135,7 +135,7 @@ body {
 
 .post h1 {
     font-size: 175%;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Modern Sans Light;
     border-bottom: 2px solid #EEEEEE;
 }
