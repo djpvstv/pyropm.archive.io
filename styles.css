@@ -136,17 +136,20 @@ body {
 .post h1 {
     font-size: 175%;
     font-weight: bold;
+    font-family: Quantum;
     border-bottom: 2px solid #EEEEEE;
 }
 
 .post h2 {
     font-size: 75%;
     font-weight: normal;
+    font-family: Microsoft YaHei UI;
 }
 
 .post a {
     font-size: 100%;
     font-weight: normal;
+    font-family: Microsoft YaHei UI;
     color: #CC6000;
 }
 
@@ -157,6 +160,7 @@ body {
 .post b {
     font-size: 125%;
     font-weight: bold;
+    font-family: Microsoft YaHei UI;
 }
 
 .break {
