@@ -1,6 +1,11 @@
 
 @font-face {
     font-family: "Modern Sans Light";
+    src: url("https://pyropm.github.io/src/modern_sans_light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Modern Sans";
     src: url("https://pyropm.github.io/src/modern_sans.woff") format("woff");
 }
 
@@ -39,7 +44,7 @@ body {
     text-decoration: none;
     font-size: 200%;
     font-weight: bold;
-    font-family: Modern Sans Light;
+    font-family: Modern Sans;
     color: #EEEEEE;
     background-color: #101010;
 }
@@ -58,7 +63,7 @@ body {
     text-decoration: none;
     font-size: 200%;
     font-weight: bold;
-    font-family: Modern Sans Light;
+    font-family: Modern Sans;
     color: #EEEEEE;
     background-color: #BB0000;
 }
@@ -82,7 +87,7 @@ body {
     text-decoration: none;
     font-size: 100%;
     font-weight: bold;
-    font-family: Microsoft JhengHei UI;
+    font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #252525;
 }
@@ -101,7 +106,7 @@ body {
     text-decoration: none;
     font-size: 100%;
     font-weight: bold;
-    font-family: Microsoft JhengHei UI;
+    font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #BB3030;
 }
@@ -116,8 +121,8 @@ body {
 .body {
     position: relative;
     top: 25px;
-    left: 5%;
-    width: 90%;
+    left: 20%;
+    width: 60%;
     outline-style: solid;
     outline-width: 1px;
     outline-color: rgba(255, 255, 255, 0.5);
@@ -128,7 +133,7 @@ body {
     width: 98%;
     font-size: 100%;
     font-weight: normal;
-    font-family: Microsoft YaHei UI;
+    font-family: Modern Sans Light;
     padding-left: 15px;
     color: #EEEEEE;
 }
@@ -136,20 +141,20 @@ body {
 .post h1 {
     font-size: 175%;
     font-weight: bold;
-    font-family: Modern Sans Light;
+    font-family: Modern Sans;
     border-bottom: 2px solid #EEEEEE;
 }
 
 .post h2 {
     font-size: 75%;
     font-weight: normal;
-    font-family: Microsoft YaHei UI;
+    font-family: Modern Sans;
 }
 
 .post a {
     font-size: 100%;
     font-weight: normal;
-    font-family: Microsoft YaHei UI;
+    font-family: Modern Sans Light;
     color: #CC6000;
 }
 
@@ -160,7 +165,16 @@ body {
 .post b {
     font-size: 125%;
     font-weight: bold;
-    font-family: Microsoft YaHei UI;
+    font-family: Modern Sans Light;
+}
+
+.mod {
+    width: 98%;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Modern Sans;
+    padding-left: 15px;
+    color: #EEEEEE;
 }
 
 .break {
@@ -183,7 +197,7 @@ body {
     width: 98%;
     font-size: 100%;
     font-weight: normal;
-    font-family: Microsoft YaHei UI;
+    font-family: Modern Sans Light;
     padding-left: 15px;
     color: #EEEEEE;
 }
