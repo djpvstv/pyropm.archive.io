@@ -42,7 +42,7 @@ body {
     line-height: 100px;
     text-align: center;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
     font-family: Modern Sans;
     color: #EEEEEE;
@@ -61,7 +61,7 @@ body {
     line-height: 100px;
     text-align: center;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
     font-family: Modern Sans;
     color: #EEEEEE;
@@ -139,20 +139,20 @@ body {
 }
 
 .post h1 {
-    font-size: 175%;
+    font-size: 225%;
     font-weight: bold;
     font-family: Modern Sans;
     border-bottom: 2px solid #EEEEEE;
 }
 
 .post h2 {
-    font-size: 75%;
+    font-size: 100%;
     font-weight: normal;
     font-family: Modern Sans;
 }
 
 .post a {
-    font-size: 100%;
+    font-size: 125%;
     font-weight: normal;
     font-family: Modern Sans Light;
     color: #CC6000;
@@ -165,6 +165,12 @@ body {
 .post b {
     font-size: 125%;
     font-weight: bold;
+    font-family: Modern Sans Light;
+}
+
+.post p {
+    font-size: 125%;
+    font-weight: normal;
     font-family: Modern Sans Light;
 }
 
