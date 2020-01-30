@@ -135,7 +135,7 @@ body {
 
 .post h1 {
     font-size: 175%;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Quantum;
     border-bottom: 2px solid #EEEEEE;
 }
