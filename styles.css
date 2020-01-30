@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: "Quantum";
-    src: url("https://pyropm.github.io/src/quantum.woff") format("woff");
+    font-family: "Modern Sans Light";
+    src: url("https://pyropm.github.io/src/modern_sans.woff") format("woff");
 }
 
 html {
@@ -39,7 +39,7 @@ body {
     text-decoration: none;
     font-size: 200%;
     font-weight: normal;
-    font-family: Quantum;
+    font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #101010;
 }
@@ -58,7 +58,7 @@ body {
     text-decoration: none;
     font-size: 200%;
     font-weight: normal;
-    font-family: Quantum;
+    font-family: Modern Sans Light;
     color: #EEEEEE;
     background-color: #BB0000;
 }
@@ -136,7 +136,7 @@ body {
 .post h1 {
     font-size: 175%;
     font-weight: normal;
-    font-family: Quantum;
+    font-family: Modern Sans Light;
     border-bottom: 2px solid #EEEEEE;
 }
 
