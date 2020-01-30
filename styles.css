@@ -38,7 +38,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 200%;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Quantum;
     color: #EEEEEE;
     background-color: #101010;
@@ -57,7 +57,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 200%;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Quantum;
     color: #EEEEEE;
     background-color: #BB0000;
