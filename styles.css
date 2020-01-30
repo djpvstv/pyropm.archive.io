@@ -134,6 +134,11 @@ body {
     border-bottom: 2px solid #EEEEEE;
 }
 
+.post h2 {
+    font-size: 75%;
+    font-weight: normal;
+}
+
 .post a {
     font-size: 100%;
     font-weight: normal;
