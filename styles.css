@@ -192,7 +192,7 @@ body {
     position: absolute;
     top: 15px;
     width: 40%;
-    font-size: 125%;
+    font-size: 100%;
     font-weight: normal;
     font-family: Modern Sans;
     text-align: right;
@@ -214,7 +214,7 @@ body {
     font-size: 125%;
     font-weight: normal;
     font-family: Modern Sans Light;
-    line-height: 1.75;
+    line-height: 1.6;
 }
 
 .break {
