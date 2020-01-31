@@ -193,13 +193,13 @@ body {
     font-size: 125%;
     font-weight: normal;
     font-family: Modern Sans;
+    text-align: right;
 }
 
 .mod h1 {
     font-size: 275%;
     font-weight: bold;
     font-family: Modern Sans;
-    border-bottom: 2px solid #EEEEEE;
     line-height: 1;
 }
 
