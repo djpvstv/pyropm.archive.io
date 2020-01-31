@@ -185,7 +185,6 @@ body {
     font-size: 100%;
     font-weight: normal;
     font-family: Modern Sans;
-    padding-left: 15px;
     color: #EEEEEE;
 }
 
@@ -196,6 +195,8 @@ body {
     font-weight: normal;
     font-family: Modern Sans;
     text-align: right;
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 .mod h1 {
@@ -205,6 +206,7 @@ body {
     font-weight: bold;
     font-family: Modern Sans;
     line-height: 1;
+    padding-left: 15px;
 }
 
 .mod p {
