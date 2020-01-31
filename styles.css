@@ -189,6 +189,12 @@ body {
     color: #EEEEEE;
 }
 
+.mod b {
+    font-size: 125%;
+    font-weight: normal;
+    font-family: Modern Sans;
+}
+
 .mod h1 {
     font-size: 275%;
     font-weight: bold;
