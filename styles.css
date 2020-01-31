@@ -189,6 +189,21 @@ body {
     color: #EEEEEE;
 }
 
+.mod h1 {
+    font-size: 275%;
+    font-weight: bold;
+    font-family: Modern Sans;
+    border-bottom: 2px solid #EEEEEE;
+    line-height: 1;
+}
+
+.mod p {
+    font-size: 125%;
+    font-weight: normal;
+    font-family: Modern Sans Light;
+    line-height: 1.75;
+}
+
 .break {
     position: relative;
     height: 25px;
