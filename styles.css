@@ -190,6 +190,8 @@ body {
 }
 
 .mod b {
+    float: right;
+    width: 40%;
     font-size: 125%;
     font-weight: normal;
     font-family: Modern Sans;
@@ -197,6 +199,8 @@ body {
 }
 
 .mod h1 {
+    float: left;
+    width: 60%;
     font-size: 275%;
     font-weight: bold;
     font-family: Modern Sans;
