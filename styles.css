@@ -201,12 +201,12 @@ body {
     font-size: 275%;
     font-weight: bold;
     font-family: Modern Sans;
-    text-decoration: none;
     line-height: 1;
 }
 
 .mod_title a {
     border-bottom: 2px solid #EEEEEE;
+    text-decoration: none;
     color: #CC6000;
 }
 
