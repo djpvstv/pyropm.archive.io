@@ -192,21 +192,29 @@ body {
 }
 
 .mod a {
+    color: #EEEEEE;
+}
+
+.mod_title {
     width: 100%;
-    text-decoration: none;
     color: #CC6000;
     font-size: 275%;
     font-weight: bold;
     font-family: Modern Sans;
     border-bottom: 2px solid #EEEEEE;
+    text-decoration: none;
     line-height: 1;
 }
 
-.mod a:hover {
+.mod_title a {
+    color: #CC6000;
+}
+
+.mod_title a:hover {
     color: #CCA000;
 }
 
-.mod a:visited {
+.mod_title a:visited {
     color: #CC6000;
 }
 
