@@ -184,38 +184,51 @@ body {
     width: 98%;
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans;
+    font-family: Modern Sans Light;
+    line-height: 1.75;
+    padding-left: 15px;
     color: #EEEEEE;
 }
 
-.mod b {
-    position: absolute;
-    top: 15px;
-    width: 40%;
-    font-size: 100%;
-    font-weight: normal;
-    font-family: Modern Sans;
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 15px;
-}
-
 .mod h1 {
-    position: absolute;
-    top: 15px;
-    width: 60%;
     font-size: 275%;
     font-weight: bold;
     font-family: Modern Sans;
+    border-bottom: 2px solid #EEEEEE;
     line-height: 1;
+}
+
+.mod h2 {
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Modern Sans;
+    line-height: 1;
+}
+
+.mod a {
+    font-size: 125%;
+    font-weight: normal;
+    font-family: Modern Sans Light;
+    color: #CC6000;
+    line-height: 1.75;
+}
+
+.mod a:hover {
+    color: #CCA000;
+}
+
+.mod b {
+    font-size: 125%;
+    font-weight: normal;
+    font-family: Modern Sans Light;
+    line-height: 1.75;
 }
 
 .mod p {
     font-size: 125%;
     font-weight: normal;
     font-family: Modern Sans Light;
-    line-height: 1.6;
-}
+    line-height: 1.75;
 
 .break {
     position: relative;
