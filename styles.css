@@ -130,12 +130,12 @@ body {
 }
 
 .post {
-    width: 98%;
     font-size: 100%;
     font-weight: normal;
     font-family: Modern Sans Light;
     line-height: 1.75;
     padding-left: 15px;
+    padding-right: 15px;
     color: #EEEEEE;
 }
 
