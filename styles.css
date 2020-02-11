@@ -180,6 +180,20 @@ body {
     line-height: 1.75;
 }
 
+.box_left {
+    float: left;
+    width: 55%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.box_right {
+    float: right;
+    width: 35%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
 .mod {
     width: 98%;
     font-size: 100%;
@@ -192,7 +206,15 @@ body {
 }
 
 .mod a {
-    color: #EEEEEE;
+    color: #CC6000;
+}
+
+.mod a:hover {
+    color: #CCA000;
+}
+
+.mod a:visited {
+    color: #CC6000;
 }
 
 .mod_title {
