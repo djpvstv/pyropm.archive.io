@@ -125,7 +125,7 @@ body {
 
 .sub_button a {
     float: left;
-    width: 200px;
+    width: 250px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -144,7 +144,7 @@ body {
 
 .sub_button b {
     float: left;
-    width: 200px;
+    width: 250px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -158,7 +158,7 @@ body {
 
 .sub_button c {
     float: left;
-    width: 200px;
+    width: 250px;
     height: 50px;
     background-color: #252525;
 }
@@ -263,6 +263,31 @@ body {
 
 .photo {
     float: right;
+}
+
+.article {
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Modern Sans Light;
+    line-height: 1.75;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #EEEEEE;
+}
+
+.article h1 {
+    font-size: 150%;
+    font-weight: bold;
+    font-family: Modern Sans;
+    line-height: 1;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.article h2 {
+    font-size: 125%;
+    font-weight: normal;
+    font-family: Modern Sans;
+    line-height: 1;
 }
 
 .break {
