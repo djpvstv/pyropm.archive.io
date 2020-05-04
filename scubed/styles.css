@@ -1,14 +1,4 @@
 
-@font-face {
-    font-family: "Modern Sans Light";
-    src: url("https://pyropm.github.io/src/modern_sans_light.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Modern Sans";
-    src: url("https://pyropm.github.io/src/modern_sans.woff") format("woff");
-}
-
 html {
     min-height: 100%;
     width: 100%;
@@ -44,7 +34,7 @@ body {
     text-decoration: none;
     font-size: 225%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #101010;
 }
@@ -63,7 +53,7 @@ body {
     text-decoration: none;
     font-size: 225%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #880000;
 }
@@ -77,7 +67,7 @@ body {
     text-decoration: none;
     font-size: 225%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #101010;
     background-image: url("./assets/Fear&PanicInstituteLogo.png");
@@ -104,7 +94,7 @@ body {
     text-decoration: none;
     font-size: 225%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #880000;
     background-image: url("./assets/Fear&PanicInstituteLogo.png");
@@ -132,7 +122,7 @@ body {
     text-decoration: none;
     font-size: 100%;
     font-weight: bold;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #252525;
 }
@@ -151,7 +141,7 @@ body {
     text-decoration: none;
     font-size: 100%;
     font-weight: bold;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     color: #EEEEEE;
     background-color: #BB3030;
 }
@@ -177,7 +167,7 @@ body {
 .post {
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     line-height: 1.75;
     padding-left: 15px;
     padding-right: 15px;
@@ -187,7 +177,7 @@ body {
 .post h1 {
     font-size: 275%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     border-bottom: 2px solid #EEEEEE;
     line-height: 1;
 }
@@ -195,14 +185,14 @@ body {
 .post h2 {
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     line-height: 1;
 }
 
 .post a {
     font-size: 125%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     color: #CC6000;
     line-height: 1.75;
 }
@@ -214,21 +204,21 @@ body {
 .post b {
     font-size: 125%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     line-height: 1.75;
 }
 
 .post p {
     font-size: 125%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     line-height: 1.75;
 }
 
 .person {
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     line-height: 1.75;
     padding-left: 15px;
     padding-right: 15px;
@@ -239,7 +229,7 @@ body {
     float: left;
     font-size: 200%;
     font-weight: bold;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     line-height: 1;
 }
 
@@ -249,7 +239,7 @@ body {
     padding-left: 20px;
     font-size: 125%;
     font-weight: normal;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     line-height: 1;
 }
 
@@ -257,18 +247,19 @@ body {
     padding-top: 75px;
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans;
+    font-family: Trebuchet MS;
     line-height: 1;
 }
 
 .photo {
+    padding-left: 10px;
     float: right;
 }
 
 .article {
     font-size: 100%;
     font-weight: normal;
-    font-family: Modern Sans Light;
+    font-family: Trebuchet MS;
     line-height: 1.75;
     padding-left: 15px;
     padding-right: 15px;
@@ -278,7 +269,6 @@ body {
 .article h1 {
     font-size: 150%;
     font-weight: bold;
-    font-family: Modern Sans;
     line-height: 1;
     border-bottom: 1px solid #EEEEEE;
 }
@@ -286,7 +276,6 @@ body {
 .article h2 {
     font-size: 125%;
     font-weight: normal;
-    font-family: Modern Sans;
     line-height: 1;
 }
 
