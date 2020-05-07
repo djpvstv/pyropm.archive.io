@@ -279,6 +279,12 @@ body {
     line-height: 1;
 }
 
+.article h3 {
+    font-size: 75%;
+    font-weight: normal;
+    line-height: 1;
+}
+
 .break {
     position: relative;
     height: 25px;
