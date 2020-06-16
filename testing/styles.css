@@ -46,7 +46,7 @@ body {
     background-color: rgba(222, 0, 0, 1);
 }
 
-.menu_bar a:active {
+.menu_bar b {
     background-color: rgba(102, 2, 60, 1);
 }
 
