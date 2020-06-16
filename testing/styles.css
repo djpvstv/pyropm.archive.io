@@ -47,6 +47,18 @@ body {
 }
 
 .menu_bar b {
+    float: left;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 225%;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 4px rgba(0, 0, 0, 0);
     background-color: rgba(102, 2, 60, 1);
 }
 
