@@ -34,7 +34,7 @@
                     The location of each button is controlled by bone position in the animations. The initial location is found on frame 10 of MenMainIconXXXX_TopN__0, controlled by the bone rotN.<br>
                     The location, if updated, needs to be copied from the first animation to the other animations, in these spots:
                 </p>
-                <p style = "font-weight: bold; line-height: 1.4;">
+                <p style = "font-weight: bold; line-height: 1.4; text-indent: 0px;">
                     First frame of MenMainIconXXXX_TopN__1<br>
                     Last frame of MenMainIconXXXX_TopN__2<br>
                     First frame of MenMainIconXXXX_TopN__3<br>
@@ -42,26 +42,25 @@
                     First frame of MenMainIconXXXX_TopN__5
                 </p>
                 <p style = "font-size: 14px;">Note, if you are editing the scale of the button by bone instead of the mesh itself, be aware that there is likely a few additional keyframes after frame one controlling scale.</p>
-                <p>
-                    This allows you to change the locations of the buttons, but the navigation table for them is still unchanged. For example, by default pressing down on the VS button will make the cursor move to the Online button. This behavior will not change until we start messing with stuff.<br>
-                    Start by opening sora_main_menu.rel in BrawlCrate, right click Section [5] and click Open in Memory Viewer. Depending on what menu and button you are editing, you need to jump to certain memory addresses in the file. With help from soopercool101, these addresses are labelled in BrawlCrate.<br>
-                    You can search for the menu you look to edit, or the specific button. As an example, let's modify a button in the Versus menu. With BrawlCrate, you can search through the annotations by pressing Ctrl+F and then clicking the Text (Annotations) option above the text box. In this example, I typed in "versus menu" to jump to the section for the versus menu buttons.<br>
-                    <img src = "../guide_images/guide_1.PNG" alt = "example" width = "50%"><br>
-                    The bolded numbers are the values that make up the navigation table, in this case the one I have selected is for the Fight button's move up ID. In this example, let's edit the Special Versus button so that when we press down, it moves to the Names button instead of the Tourney/Codes button.<br>
-                    Let's start by searching for the Special Versus Button. In this case, we are looking for the move down ID, so we can search for the specific address by searching "Special Versus Button: Move Down ID" in the annotations.<br>
-                    <img src = "../guide_images/guide_2.PNG" alt = "example" width = "50%"><br>
-                    As noted by our annotations, the default for the Special Versus move down ID is 02, the id for the Tourney/Codes button. For this example, we change that number to be the number for the Names button, which the annotations indicate is 05.<br>
-                    <img src = "../guide_images/guide_3.PNG" alt = "example" width = "50%"><br>
-                    With this done, we can now save file. Exit out of the memory viewer, and press Ctrl+S or Save in the file menu. Now all that's left to do is try it out! Put it into the game and test to see if your changes worked!<br>
-                    Enjoy making your own menus!
-                </p>
+                <p>This allows you to change the locations of the buttons, but the navigation table for them is still unchanged. For example, by default pressing down on the VS button will make the cursor move to the Online button. This behavior will not change until we start messing with stuff.</p>
+                <p>Start by opening sora_main_menu.rel in BrawlCrate, right click Section [5] and click Open in Memory Viewer. Depending on what menu and button you are editing, you need to jump to certain memory addresses in the file. With help from soopercool101, these addresses are labelled in BrawlCrate.</p>
+                <p>You can search for the menu you look to edit, or the specific button. As an example, let's modify a button in the Versus menu. With BrawlCrate, you can search through the annotations by pressing Ctrl+F and then clicking the Text (Annotations) option above the text box. In this example, I typed in "versus menu" to jump to the section for the versus menu buttons.</p>
+                <p><img src = "../guide_images/guide_1.PNG" alt = "example" width = "50%"></p>
+                <p>The bolded numbers are the values that make up the navigation table, in this case the one I have selected is for the Fight button's move up ID. In this example, let's edit the Special Versus button so that when we press down, it moves to the Names button instead of the Tourney/Codes button.</p>
+                <p>Let's start by searching for the Special Versus Button. In this case, we are looking for the move down ID, so we can search for the specific address by searching "Special Versus Button: Move Down ID" in the annotations.</p>
+                <p><img src = "../guide_images/guide_2.PNG" alt = "example" width = "50%"></p>
+                <p>As noted by our annotations, the default for the Special Versus move down ID is 02, the id for the Tourney/Codes button. For this example, we change that number to be the number for the Names button, which the annotations indicate is 05.</p>
+                <p><img src = "../guide_images/guide_3.PNG" alt = "example" width = "50%"></p>
+                <p>With this done, we can now save file. Exit out of the memory viewer, and press Ctrl+S or Save in the file menu. Now all that's left to do is try it out! Put it into the game and test to see if your changes worked!</p>
+                <p>Enjoy making your own menus!</p>
             </div>
         </div>
         <div class = "post_background">
             <div class = "post_body">
                 <p style = "text-indent: 0px;">This guide will cover the basics of editing the main menu and changing layouts. The guide is split up into sections, and you can jump to different sections depending on what you are trying to do.</p>
                 <a href = "https://pyropm.github.io/content/menus/guide_part_1/">Changing the buttons</a><br>
-                <a href = "https://pyropm.github.io/content/menus/guide_part_2/">Changing the layout</a>
+                <a href = "https://pyropm.github.io/content/menus/guide_part_2/">Changing the layout</a><br>
+                <p style = "text-indent: 0px;">If there is anything wrong with the guide, contact me and let me know.</p>
             </div>
         </div>
     </body>
