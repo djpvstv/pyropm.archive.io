@@ -1,278 +1,319 @@
 
-@font-face {
-    font-family: "Modern Sans Light";
-    src: url("https://pyropm.github.io/src/modern_sans_light.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Modern Sans";
-    src: url("https://pyropm.github.io/src/modern_sans.woff") format("woff");
-}
-
 html {
     min-height: 100%;
     width: 100%;
 }
 
 body {
-    background-image: url("./assets/gradient.png");
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #FF6000;
     display: flex;
     flex-direction: column;
     margin: 0 0 100px;
+
+    --pyropm_orange:        rgba(222, 107, 26, 1);
+    --pyropm_red:           rgba(222, 0, 0, 1);
+    --pyropm_purple:        rgba(102, 2, 60, 1);
+    --pyropm_black:         rgba(0, 0, 0, 1);
+    --pyropm_darkgrey:      rgba(48, 48, 48, 1);
+    --pyropm_grey:          rgba(96, 96, 96, 1);
+    --pyropm_white:         rgba(255, 255, 255, 1);
+    --pyropm_trans:         rgba(0, 0, 0, 0);
+    --pyropm_black_trans:   rgba(0, 0, 0, 0.5);
+    --pyropm_grey_trans:    rgba(128, 128, 128, 0.5);
+    --pyropm_white_trans:   rgba(255, 255, 255, 0.5);
+    --pyropm_link:          rgba(222, 107, 26, 1);
+    --pyropm_link_hover:    rgba(222, 60, 0, 1);
+
+    background-image: linear-gradient(to bottom right, var(--pyropm_orange), var(--pyropm_red), var(--pyropm_purple));
+    background-color: var(--pyropm_red);
 }
 
-.header {
+/* Menu */
+/* The menu used on top of the site. */
+.menu_bar {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: -1;
     width: 100%;
-    height: 100px;
-    background-color: #101010;
+    overflow: hidden;
 }
 
-.button a {
+.menu_bar a {
+    position: relative;
     float: left;
     width: 200px;
     height: 100px;
     line-height: 100px;
     text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
     font-size: 225%;
-    font-weight: bold;
-    font-family: Modern Sans;
-    color: #EEEEEE;
-    background-color: #101010;
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_trans);
+    background-color: var(--pyropm_trans);
+    transition: background-color .125s ease-in-out;
+    -moz-transition: background-color .125s ease-in-out;
+    -webkit-transition: background-color .125s ease-in-out;
+    transition: text-shadow .125s ease-in-out;
+    -moz-transition: text-shadow .125s ease-in-out;
+    -webkit-transition: text-shadow .125s ease-in-out;
 }
 
-.button a:hover {
-    color: #101010;
-    background-color: #EEEEEE;
+.menu_bar a:hover {
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_white);
+    background-color: var(--pyropm_red);
 }
 
-.button b {
+.menu_bar b {
+    position: relative;
     float: left;
     width: 200px;
     height: 100px;
     line-height: 100px;
     text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
     font-size: 225%;
-    font-weight: bold;
-    font-family: Modern Sans;
-    color: #EEEEEE;
-    background-color: #BB0000;
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_white);
+    background-color: var(--pyropm_purple);
 }
 
-.sub_header {
+/* Sub Menu */
+/* The sub-menu used on top of the site, just below the main one. */
+.sub_menu_bar {
     position: absolute;
     top: 100px;
     left: 0px;
-    z-index: -1;
     width: 100%;
-    height: 50px;
-    background-color: #252525;
+    overflow: hidden;
+    background-color: var(--pyropm_darkgrey);
 }
 
-.sub_button a {
+.sub_menu_bar a {
     float: left;
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
     font-size: 100%;
-    font-weight: bold;
-    font-family: Modern Sans Light;
-    color: #EEEEEE;
-    background-color: #252525;
+    color: var(--pyropm_black);
+    text-shadow: 1px 2px var(--pyropm_trans);
+    background-color: var(--pyropm_trans);
+    transition: background-color .125s ease-in-out;
+    -moz-transition: background-color .125s ease-in-out;
+    -webkit-transition: background-color .125s ease-in-out;
+    transition: text-shadow .125s ease-in-out;
+    -moz-transition: text-shadow .125s ease-in-out;
+    -webkit-transition: text-shadow .125s ease-in-out;
 }
 
-.sub_button a:hover {
-    color: #101010;
-    background-color: #EEEEEE;
+.sub_menu_bar a:hover {
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_white);
+    background-color: var(--pyropm_red);
 }
 
-.sub_button b {
+.sub_menu_bar b {
     float: left;
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
     font-size: 100%;
-    font-weight: bold;
-    font-family: Modern Sans Light;
-    color: #EEEEEE;
-    background-color: #BB3030;
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_white);
+    background-color: var(--pyropm_purple);
 }
 
-.sub_button c {
+.sub_menu_bar c {
     float: left;
     width: 200px;
     height: 50px;
-    background-color: #252525;
+    line-height: 50px;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 100%;
+    color: var(--pyropm_black);
+    text-shadow: 2px 4px var(--pyropm_white);
+    background-color: var(--pyropm_trans);
 }
 
-.body {
+/* Menu End */
+.menu_end {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--pyropm_trans);
+    z-index: -1;
+}
+
+/* Post */
+/* Used for every post on the main page and every individual page. */
+.post_background {
     position: relative;
     top: 25px;
     left: 20%;
     width: 60%;
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--pyropm_white_trans);
+    background-color: var(--pyropm_black_trans);
 }
 
-.post {
-    font-size: 100%;
-    font-weight: normal;
-    font-family: Modern Sans Light;
+.post_body {
+    font-family: Helvetica;
+    padding-left: 35px;
+    padding-right: 35px;
     line-height: 1.75;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #EEEEEE;
+    text-indent: 25px;
+    color: var(--pyropm_white);
 }
 
-.post h1 {
-    font-size: 275%;
+.post_body h1 {
+    font-size: 40px;
     font-weight: bold;
-    font-family: Modern Sans;
-    border-bottom: 2px solid #EEEEEE;
+    font-style: italic;
+    text-shadow: 4px 2px var(--pyropm_black);
+    text-indent: 0px;
     line-height: 1;
 }
 
-.post h2 {
-    font-size: 100%;
+.post_body p {
+    font-size: 17px;
     font-weight: normal;
-    font-family: Modern Sans;
+    line-height: 1.75;
+    text-indent: 25px;
+}
+
+.post_body a {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.75;
+    text-indent: 25px;
+    color: var(--pyropm_text_link);
+}
+
+.post_body a:hover {
+    color: var(--pyropm_text_link_hover);
+}
+
+.post_date p {
+    font-size: 15px;
+    font-weight: normal;
+    text-indent: 0px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.post_date a {
+    font-size: 15px;
+    font-weight: normal;
+    text-indent: 0px;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Mod */
+/* Used for every mod on the content page and individual page. */
+.mod_background {
+    position: relative;
+    top: 25px;
+    left: 20%;
+    width: 60%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--pyropm_white_trans);
+    background-color: var(--pyropm_black_trans);
+}
+
+.mod_body {
+    font-family: Helvetica;
+    padding-left: 35px;
+    padding-right: 35px;
+    line-height: 1.75;
+    text-indent: 25px;
+    color: var(--pyropm_white);
+}
+
+.mod_body h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 2px var(--pyropm_black);
+    text-indent: 0px;
     line-height: 1;
 }
 
-.post a {
-    font-size: 125%;
+.mod_body p {
+    font-size: 17px;
     font-weight: normal;
-    font-family: Modern Sans Light;
-    color: #CC6000;
     line-height: 1.75;
+    text-indent: 25px;
 }
 
-.post a:hover {
-    color: #CCA000;
-}
-
-.post b {
-    font-size: 125%;
+.mod_body a {
+    font-size: 17px;
     font-weight: normal;
-    font-family: Modern Sans Light;
     line-height: 1.75;
+    text-indent: 25px;
+    color: var(--pyropm_text_link);
 }
 
-.post p {
-    font-size: 125%;
-    font-weight: normal;
-    font-family: Modern Sans Light;
-    line-height: 1.75;
-}
-
-.box_left {
-    float: left;
-    width: 55%;
-    height: 100%;
-    background-color: #000000;
-}
-
-.box_right {
-    float: right;
-    width: 35%;
-    height: 100%;
-    background-color: #EEEEEE;
-}
-
-.mod {
-    width: 98%;
-    font-size: 100%;
-    font-weight: normal;
-    font-family: Modern Sans Light;
-    line-height: 1.75;
-    padding-top: 15px;
-    padding-left: 15px;
-    color: #EEEEEE;
-}
-
-.mod a {
-    color: #CC6000;
-}
-
-.mod a:hover {
-    color: #CCA000;
-}
-
-.mod a:visited {
-    color: #CC6000;
+.mod_body a:hover {
+    color: var(--pyropm_text_link_hover);
 }
 
 .mod_title {
+    position: relative;
+    width: 55%;
+    height: 150px;
+    float: left;
+}
+
+#mod_text {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    color: #CC6000;
-    font-size: 275%;
-    font-weight: bold;
-    font-family: Modern Sans;
-    line-height: 1;
+    height: 100%;
+    background-color: var(--pyropm_black_trans);
 }
 
-.mod_title a {
-    border-bottom: 2px solid #EEEEEE;
-    text-decoration: none;
-    color: #CC6000;
+.mod_download {
+    width: 35%;
+    height: 100px;
+    float: right;
+    text-align: right;
 }
 
-.mod_title a:hover {
-    color: #CCA000;
+.mod_end {
+    height: 150px;
+    border-bottom: 2px solid var(--pyropm_white);
 }
 
-.mod_title a:visited {
-    color: #CC6000;
-}
-
-.mod p {
-    font-size: 100%;
-    font-weight: normal;
-    font-family: Modern Sans Light;
-    line-height: 1.25;
-}
-
+/* Break */
 .break {
     position: relative;
     height: 25px;
-}
-
-.footer {
-    position: relative;
-    top: 50px;
-    left: 5%;
-    width: 90%;
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: #EEEEEE;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.footer_text {
-    width: 98%;
-    font-size: 100%;
-    font-weight: normal;
-    font-family: Modern Sans Light;
-    padding-left: 15px;
-    color: #EEEEEE;
-}
-
-.footer_text h1 {
-    font-size: 100%;
-    font-weight: normal;
 }
