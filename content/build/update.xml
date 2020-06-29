@@ -1,0 +1,19 @@
+<root>
+	<projectm>
+		<update updateVersion="1.1" length="1096" md5="8813578bcf8cc637e586138b51f922a2">
+			<baseVersionsSupported>
+				<baseVersion>1.0</baseVersion>
+			</baseVersionsSupported>
+			<url>https://pyropm.github.io/content/build/pyupdate-1.0-1.1.7z</url>
+		</update>
+	</projectm>
+	<launcher>
+		<update updateVersion="" length="" md5="">
+		<baseVersionsSupported>
+			<baseVersion>*</baseVersion>
+		</baseVersionsSupported>
+		<url></url>
+		</update>
+	</launcher>
+	<news></news>
+</root>
