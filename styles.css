@@ -68,6 +68,15 @@ body {
     background-color: var(--pyropm_red);
 }
 
+.menu_bar a::selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .menu_bar b {
     position: relative;
     float: left;
@@ -83,6 +92,10 @@ body {
     color: var(--pyropm_black);
     text-shadow: 2px 4px var(--pyropm_white);
     background-color: var(--pyropm_purple);
+}
+
+.menu_bar b::selection {
+    background: var(--pyropm_trans);
 }
 
 /* Sub Menu */
@@ -120,8 +133,12 @@ body {
 
 .sub_menu_bar a:hover {
     color: var(--pyropm_black);
-    text-shadow: 2px 4px var(--pyropm_white);
+    text-shadow: 1px 2px var(--pyropm_white);
     background-color: var(--pyropm_red);
+}
+
+.sub_menu_bar a::selection {
+    background: var(--pyropm_trans);
 }
 
 .sub_menu_bar b {
@@ -140,19 +157,14 @@ body {
     background-color: var(--pyropm_purple);
 }
 
+.sub_menu_bar b::selection {
+    background: var(--pyropm_trans);
+}
+
 .sub_menu_bar c {
     float: left;
     width: 200px;
     height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-family: Helvetica;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 100%;
-    color: var(--pyropm_black);
-    text-shadow: 2px 4px var(--pyropm_white);
     background-color: var(--pyropm_trans);
 }
 
@@ -190,6 +202,10 @@ body {
     color: var(--pyropm_white);
 }
 
+.post_body::selection {
+    background: var(--pyropm_orange);
+}
+
 .post_body h1 {
     font-size: 40px;
     font-weight: bold;
@@ -199,11 +215,19 @@ body {
     line-height: 1;
 }
 
+.post_body h1::selection {
+    background: var(--pyropm_orange);
+}
+
 .post_body p {
     font-size: 17px;
     font-weight: normal;
     line-height: 1.75;
     text-indent: 25px;
+}
+
+.post_body p::selection {
+    background: var(--pyropm_orange);
 }
 
 .post_body a {
@@ -216,6 +240,10 @@ body {
 
 .post_body a:hover {
     color: var(--pyropm_text_link_hover);
+}
+
+.post_body a::selection {
+    background: var(--pyropm_orange);
 }
 
 .post_date p {
