@@ -11,7 +11,7 @@ function loadFile(filePath) {
 }
 
 var in_file = loadFile("https://pyropm.github.io/content/content.json");
-var json_data = parseData(in_file);
+var json_data = JSON.parse(in_file);
 const installed_mods = json_data.mods;
 in_file.close();
 
@@ -20,7 +20,7 @@ var html_ids = [];
 
 for (let i = 0; i < installed_mods.length; i++) {
     var mod_file = loadFile("https://pyropm.github.io/content/" + installed_mods[i].name);
-    json_data = parseData(mod_file);
+    json_data = JSON.parse(mod_file);
     var id = i + " link";
     html_ids.push(i.toString());
     var html_block = <div class = "mod_wrapper"><div class = "mod_body" id = {json_data.name}><div class = "mod_text" id = "mod_text"><div class = "row mod_name">{json_data.name}</div><div class = "row mod_author">by {json_data.author}</div><div class = "row mod_description">{json_data.description}</div><div class = "mod_link_1" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download_direct}>Brawl Vault</div></div><div class = "mod_link_2" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download}>Direct Download</div></div></div><div class = "mod_image" id = "link" href = {json_data.image_album}><img class = "mod_img" src = {json_data.image}/></div></div></div>;
