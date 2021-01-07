@@ -27,6 +27,7 @@ body {
     --pyropm_link_hover:    rgba(222, 60, 0, 1);
 
     color: var(--pyropm_white);
+    font-family: Helvetica;
     background-image: linear-gradient(to bottom right, var(--pyropm_orange), var(--pyropm_red), var(--pyropm_purple));
     background-color: var(--pyropm_red);
 }
