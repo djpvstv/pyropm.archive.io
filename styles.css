@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 0 100px;
+    transition: ease-in-out;
 
     --pyropm_orange:        rgba(222, 107, 26, 1);
     --pyropm_red:           rgba(222, 0, 0, 1);
