@@ -23,22 +23,7 @@ for (let i = 0; i < installed_mods.length; i++) {
     json_data = parseData(mod_file);
     var id = i + " link";
     html_ids.push(i.toString());
-    html_content.push(
-        <div class = "mod_wrapper">
-            <div class = "mod_body" id = {json_data.name}>
-                <div class = "mod_text" id = "mod_text">
-                    <div class = "row mod_name">{json_data.name}</div>
-                    <div class = "row mod_author">by {json_data.author}</div>
-                    <div class = "row mod_description">{json_data.description}</div>
-                    <div class = "mod_link_1" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download_direct}>Brawl Vault</div></div>
-                    <div class = "mod_link_2" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download}>Direct Download</div></div>
-                </div>
-                <div class = "mod_image" id = "link" href = {json_data.image_album}>
-                    <img class = "mod_img" src = {json_data.image}/>
-                </div>
-            </div>
-        </div>
-    );
+    html_content.push(<div class = "mod_wrapper"><div class = "mod_body" id = {json_data.name}><div class = "mod_text" id = "mod_text"><div class = "row mod_name">{json_data.name}</div><div class = "row mod_author">by {json_data.author}</div><div class = "row mod_description">{json_data.description}</div><div class = "mod_link_1" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download_direct}>Brawl Vault</div></div><div class = "mod_link_2" id = "mod_link"><div class = "mod_download" id = "link" href = {json_data.download}>Direct Download</div></div></div><div class = "mod_image" id = "link" href = {json_data.image_album}><img class = "mod_img" src = {json_data.image}/></div></div></div>);
 }
 
 $(div#mod_container).merge(<div id = "mod_container">{html_content}</div>);
