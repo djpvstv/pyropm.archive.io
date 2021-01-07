@@ -344,3 +344,103 @@ body {
     position: relative;
     height: 25px;
 }
+
+
+.mod_wrapper {
+    padding: 8px;
+}
+
+.mod_body {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    border: 3px solid #222222;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+    padding: 12px 0px 12px 0px;
+    transition: border 0.1s;
+    transition: background 0.1s;
+}
+
+.mod_body:hover {
+    border: 3px solid #EEEEEE;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 0.5));
+}
+
+.mod_text {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+.row {
+    position: relative;
+    left: 12px;
+    width: 100%;
+    padding: 0px;
+}
+
+.mod_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mod_author {
+    padding: 8px 0px 2px 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.mod_description {
+    padding: 2px 0px 4px 0px;
+    min-height: 100px;
+}
+
+.mod_image {
+    display: inline-block;
+    float: right;
+    position: relative;
+    padding-right: 12px;
+    width: 30%;
+}
+
+.mod_img {
+    max-width: 100%;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.mod_link_1 {
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    vertical-align: bottom;
+}
+
+.mod_link_2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    left: 136px;
+    vertical-align: bottom;
+}
+
+.mod_download {
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #EEEEEE;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+    transition: border 0.1s;
+    transition: background 0.1s;
+}
+
+.mod_download:hover {
+    border: 2px solid #EE4400;
+    background: linear-gradient(to bottom, rgba(200, 50, 0, 0.75), rgba(255, 150, 0, 0.5));
+}
+
+.mod_download_popup {
+    z-index: 1;
+}
