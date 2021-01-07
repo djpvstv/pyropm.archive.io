@@ -13,7 +13,6 @@ function loadFile(filePath) {
 var in_file = loadFile("https://pyropm.github.io/content/content.json");
 var json_data = JSON.parse(in_file);
 const installed_mods = json_data.mods;
-in_file.close();
 
 var html_content = [];
 var html_ids = [];
