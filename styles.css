@@ -401,7 +401,7 @@ body {
     display: inline-block;
     float: right;
     position: relative;
-    padding-right: 12px;
+    right: 12px;
     width: 30%;
 }
 
