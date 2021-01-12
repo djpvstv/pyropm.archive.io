@@ -1,11 +1,9 @@
 
-var json_data;
-
 function open_json() {   
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            json_data = JSON.parse(this.responseText);
+            const json_data = JSON.parse(this.responseText);
             console.log(json_data);
         }
     };
