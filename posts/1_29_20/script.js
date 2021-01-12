@@ -1,15 +1,13 @@
 
 function open_json() {   
-    return new Promise(function (resolve) {
-        const oReq = new XMLHttpRequest();
-        oReq.addEventListener("load", reqListener);
-        oReq.open("GET", "data.json");
-        oReq.send();
-
-        function reqListener () {
-            resolve(JSON.parse(oReq.responseText))
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            return JSON.parse("data.json");
         }
-	})
+    };
+    xhttp.open("GET", "filename", true);
+    xhttp.send();
 }
 
 function add_metadata(name, content) {
@@ -21,12 +19,12 @@ function add_metadata(name, content) {
 
 var json_data = open_json();
 
-document.title = json_data["title"] + " - PyroPM";
-add_metadata("author",      json_data["author"]);
+document.title = json_data.title + " - PyroPM";
+add_metadata("author",      json_data.author);
 add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
 add_metadata("theme-color", "#66023C");
 if (json_data.category == "post") {
-    add_metadata("description", "Read the post from " + json_data["date"] + ".");
+    add_metadata("description", "Read the post from " + json_data.date + ".");
 }
 /*
 if (json_data.category == "content") {
