@@ -21,12 +21,12 @@ function add_metadata(name, content) {
 
 var json_data = open_json();
 
-document.title = json_data.title + " - PyroPM";
-add_metadata("author",      json_data.author);
+document.title = json_data["title"] + " - PyroPM";
+add_metadata("author",      json_data["author"]);
 add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
 add_metadata("theme-color", "#66023C");
 if (json_data.category == "post") {
-    add_metadata("description", "Read the post from " + json_data.date + ".");
+    add_metadata("description", "Read the post from " + json_data["date"] + ".");
 }
 /*
 if (json_data.category == "content") {
