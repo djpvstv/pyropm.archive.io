@@ -18,6 +18,7 @@ function add_metadata(name, content) {
 }
 
 var json_data = open_json();
+console.log(json_data)
 
 document.title = json_data["title"] + " - PyroPM";
 add_metadata("author",      json_data.author);
