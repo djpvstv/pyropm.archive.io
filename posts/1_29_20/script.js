@@ -6,6 +6,7 @@ function open_json() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             json_data = JSON.parse(this.responseText);
+            console.log(json_data);
         }
     };
     xhttp.open("GET", "data.json", true);
