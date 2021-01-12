@@ -1,10 +1,11 @@
 
+var json_data;
+
 function open_json() {   
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.responseText);
-            return data;
+            json_data = JSON.parse(this.responseText);
         }
     };
     xhttp.open("GET", "data.json", true);
@@ -18,10 +19,8 @@ function add_metadata(name, content) {
     document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
-var json = open_json();
-//var json_data = JSON.parse(json);
-console.log(json);
-//console.log(json_data);
+open_json();
+console.log(json_data);
 /*
 document.title = json_data.title + " - PyroPM";
 add_metadata("author",      json_data.author);
