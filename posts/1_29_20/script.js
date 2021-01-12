@@ -3,7 +3,6 @@ function open_json() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
             return this.responseText;
         }
     };
@@ -20,6 +19,8 @@ function add_metadata(name, content) {
 
 var json = open_json();
 var json_data = JSON.parse(json);
+console.log(json);
+console.log(json_data);
 
 document.title = json_data.title + " - PyroPM";
 add_metadata("author",      json_data.author);
