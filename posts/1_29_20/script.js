@@ -6,7 +6,7 @@ function open_json() {
             return this.responseText;
         }
     };
-    xhttp.open("GET", "filename", true);
+    xhttp.open("GET", "data.json", true);
     xhttp.send();
 }
 
