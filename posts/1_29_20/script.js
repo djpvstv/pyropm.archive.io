@@ -9,20 +9,19 @@ function add_metadata(name, content) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        const json_data = JSON.parse(this.responseText);
+        var json_data = JSON.parse(this.responseText);
+        document.title = json_data.title + " - PyroPM";
+        add_metadata("author",      json_data.author);
+        add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
+        add_metadata("theme-color", "#66023C");
+        if (json_data.category == "post") {
+            add_metadata("description", "Read the post from " + json_data.date + ".");
+        }
     }
 };
 xhttp.open("GET", "data.json", true);
 xhttp.send();
-console.log(json_data);
-/*
-document.title = json_data.title + " - PyroPM";
-add_metadata("author",      json_data.author);
-add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
-add_metadata("theme-color", "#66023C");
-if (json_data.category == "post") {
-    add_metadata("description", "Read the post from " + json_data.date + ".");
-}
+
 /*
 if (json_data.category == "content") {
     add_metadata("description", json_data.description)
