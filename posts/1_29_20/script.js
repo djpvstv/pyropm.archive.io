@@ -4,6 +4,7 @@ function open_json() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
+            return this.responseText;
         }
     };
     xhttp.open("GET", "data.json", true);
@@ -18,9 +19,8 @@ function add_metadata(name, content) {
 }
 
 var json_data = open_json();
-console.log(json_data);
 
-document.title = json_data["title"] + " - PyroPM";
+document.title = json_data.title + " - PyroPM";
 add_metadata("author",      json_data.author);
 add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
 add_metadata("theme-color", "#66023C");
