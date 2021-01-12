@@ -3,7 +3,8 @@ function open_json() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            return this.responseText;
+            var data = JSON.parse(this.responseText);
+            return data;
         }
     };
     xhttp.open("GET", "data.json", true);
