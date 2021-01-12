@@ -19,10 +19,10 @@ function add_metadata(name, content) {
 }
 
 var json = open_json();
-var json_data = JSON.parse(json);
+//var json_data = JSON.parse(json);
 console.log(json);
-console.log(json_data);
-
+//console.log(json_data);
+/*
 document.title = json_data.title + " - PyroPM";
 add_metadata("author",      json_data.author);
 add_metadata("keywords",    "PyroPM, Project M, ProjectM, PM, project m, projectm, pm, ssbpm");
