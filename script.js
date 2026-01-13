@@ -12,7 +12,7 @@ function loadFile(filePath) {
     return result;
 }
 
-var in_file = loadFile("https://pyropm.github.io/content/content.json");
+var in_file = loadFile("https://https://djpvstv.github.io/pyropm.archive.io/content/content.json");
 var json_data = JSON.parse(in_file);
 const installed_mods = json_data.mods;
 
@@ -20,7 +20,7 @@ var html_content = [];
 var html_ids = [];
 
 for (let i = 0; i < installed_mods.length; i++) {
-    var mod_file = loadFile("https://pyropm.github.io/content/" + installed_mods[i].name);
+    var mod_file = loadFile("https://https://djpvstv.github.io/pyropm.archive.io/content/" + installed_mods[i].name);
     json_data = JSON.parse(mod_file);
     var id = i + " link";
     html_ids.push(i.toString());
